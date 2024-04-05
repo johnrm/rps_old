@@ -1,7 +1,8 @@
-let rpsArray = ['rock', 'paper', 'scissors'];
+let rpsArray = ['rock','scissors','paper'];
 
 /**
  * Clear the decks
+ * Reset game counters
  */
 let computerScore = 0;
 let userScore = 0;
@@ -9,9 +10,9 @@ let computerRPS = "";
 let userRPS = "";
 
 /**
- * Have a go
+ * Play the game
  */
-for (i = 0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
     computerRPS = computerGuess();
     userRPS = userGuess();
     pickWinner()
